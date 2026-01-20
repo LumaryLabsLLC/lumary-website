@@ -33,8 +33,7 @@ export function Footer() {
               <span className="text-xl font-semibold text-white">Lumary</span>
             </Link>
             <p className="text-sm text-zinc-500 max-w-xs">
-              Professional screen recording for macOS. Built for creators who demand reliability and
-              flexibility.
+              Screen recording for macOS that just works.
             </p>
           </div>
 
@@ -83,7 +82,16 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-zinc-800">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <p className="text-sm text-zinc-500">
-              &copy; {new Date().getFullYear()} Lumary Labs LLC. All rights reserved.
+              &copy; 2026{" "}
+              <a
+                href="https://lumarylabs.com/"
+                className="hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lumary Labs LLC
+              </a>
+              . All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <a
