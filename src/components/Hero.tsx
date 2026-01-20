@@ -58,7 +58,7 @@ export function Hero() {
               />
             </div>
             {/* Glow effect */}
-            <div className="absolute -inset-x-20 -bottom-20 h-40 bg-gradient-to-t from-[#0d0d0f] to-transparent pointer-events-none" />
+            <div className="absolute -inset-x-20 -bottom-20 h-40 bg-gradient-to-t from-[#0a0a0b] to-transparent pointer-events-none" />
           </div>
         </div>
       </div>
