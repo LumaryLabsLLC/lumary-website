@@ -112,3 +112,106 @@ html {
 .drift-animate {
   animation: drift 20s ease-in-out infinite;
 }
+
+/* Camera lens vignette */
+.vignette::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+/* Lens flare / light leak */
+.lens-flare {
+  position: fixed;
+  pointer-events: none;
+  z-index: 50;
+  mix-blend-mode: screen;
+}
+
+/* Anamorphic horizontal flare */
+@keyframes flare-shift {
+  0%, 100% { opacity: 0.15; transform: translateX(0) scaleX(1); }
+  50% { opacity: 0.25; transform: translateX(10px) scaleX(1.1); }
+}
+
+.anamorphic-flare {
+  position: fixed;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(251, 191, 36, 0.4) 20%,
+    rgba(251, 191, 36, 0.8) 50%,
+    rgba(251, 191, 36, 0.4) 80%,
+    transparent 100%
+  );
+  filter: blur(1px);
+  animation: flare-shift 12s ease-in-out infinite;
+}
+
+/* Chromatic aberration on scroll - subtle color shift */
+.chromatic-aberration {
+  position: relative;
+}
+
+/* Subtle barrel distortion feel via gradient edges */
+.lens-distortion::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9997;
+  background: radial-gradient(
+    ellipse 80% 60% at center,
+    transparent 60%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}
+
+/* Bokeh circles */
+@keyframes bokeh-float {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.3; }
+  50% { transform: translateY(-20px) scale(1.1); opacity: 0.5; }
+}
+
+.bokeh {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(251, 191, 36, 0.4) 0%,
+    rgba(251, 191, 36, 0.1) 50%,
+    transparent 70%
+  );
+  filter: blur(2px);
+  animation: bokeh-float 8s ease-in-out infinite;
+}
+
+/* Light leak overlay */
+@keyframes light-leak {
+  0%, 100% { opacity: 0.05; transform: translateX(-5%); }
+  50% { opacity: 0.1; transform: translateX(5%); }
+}
+
+.light-leak {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  background: linear-gradient(
+    135deg,
+    rgba(251, 146, 60, 0.1) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(251, 191, 36, 0.05) 100%
+  );
+  animation: light-leak 15s ease-in-out infinite;
+}
