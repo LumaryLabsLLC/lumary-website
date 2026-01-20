@@ -40,7 +40,7 @@ const privacyFeatures = [
 
 export function Privacy() {
   return (
-    <section className="py-24 lg:py-32 bg-zinc-900/30">
+    <section className="py-24 lg:py-32 bg-white/[0.02]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-amber-400">Privacy First</h2>

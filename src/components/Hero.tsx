@@ -1,10 +1,6 @@
 export function Hero() {
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-amber-500/20 rounded-full blur-[120px]" />
-      </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
@@ -62,7 +58,7 @@ export function Hero() {
               />
             </div>
             {/* Glow effect */}
-            <div className="absolute -inset-x-20 -bottom-20 h-40 bg-gradient-to-t from-[#1c1c1e] to-transparent pointer-events-none" />
+            <div className="absolute -inset-x-20 -bottom-20 h-40 bg-gradient-to-t from-[#0d0d0f] to-transparent pointer-events-none" />
           </div>
         </div>
       </div>
