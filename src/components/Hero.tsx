@@ -50,15 +50,11 @@ export function Hero() {
         {/* App Screenshot */}
         <div className="mt-16 relative">
           <div className="relative mx-auto max-w-5xl">
-            <div className="shadow-2xl overflow-hidden">
-              <img
-                src="/images/image1.png"
-                alt="Lumary app interface showing screen recording controls, audio settings, and session management"
-                className="w-full h-auto"
-              />
-            </div>
-            {/* Glow effect */}
-            <div className="absolute -inset-x-20 -bottom-20 h-40 bg-gradient-to-t from-[#0a0a0b] to-transparent pointer-events-none" />
+            <img
+              src="/images/image1.png"
+              alt="Lumary app interface showing screen recording controls, audio settings, and session management"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>

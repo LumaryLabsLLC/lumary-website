@@ -13,24 +13,44 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0a0a0b] relative">
-      {/* Subtle top gradient */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-gradient-to-b from-amber-950/20 via-transparent to-transparent" />
+    <div className="min-h-screen bg-[#0d0d0f] noise-bg relative overflow-hidden">
+      {/* Background gradient orbs */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        {/* Top-left amber orb */}
+        <div
+          className="gradient-orb glow-animate w-[600px] h-[600px] -top-48 -left-48 bg-amber-500/10"
+          style={{ position: 'absolute' }}
+        />
+        {/* Top-right warm orb */}
+        <div
+          className="gradient-orb drift-animate w-[500px] h-[500px] top-1/4 -right-32 bg-orange-500/5"
+          style={{ position: 'absolute' }}
+        />
+        {/* Center-left subtle orb */}
+        <div
+          className="gradient-orb w-[400px] h-[400px] top-1/2 -left-20 bg-amber-600/5"
+          style={{ position: 'absolute', animationDelay: '2s' }}
+        />
       </div>
 
-      <Header />
-      <main>
-        <Hero />
-        <Features />
-        <Showcase />
-        <UseCases />
-        <Specs />
-        <Privacy />
-        <Pricing />
-        <FAQ />
-      </main>
-      <Footer />
+      {/* Grid overlay */}
+      <div className="fixed inset-0 grid-bg pointer-events-none opacity-30" />
+
+      {/* Content */}
+      <div className="relative z-10">
+        <Header />
+        <main>
+          <Hero />
+          <Features />
+          <Showcase />
+          <UseCases />
+          <Specs />
+          <Privacy />
+          <Pricing />
+          <FAQ />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

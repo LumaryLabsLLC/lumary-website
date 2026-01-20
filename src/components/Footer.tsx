@@ -8,7 +8,7 @@ const navigation = {
     { name: "FAQ", href: "#faq" },
   ],
   support: [
-    { name: "Documentation", href: "#" },
+    { name: "All Features", href: "/all-features" },
     { name: "Contact", href: "mailto:contact@lumarylabs.com?subject=Lumary%20App%20-%20Support" },
   ],
   legal: [
