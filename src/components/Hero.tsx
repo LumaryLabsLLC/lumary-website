@@ -26,8 +26,8 @@ export function Hero() {
 
           {/* Subheadline */}
           <p className="mt-6 text-lg leading-8 text-zinc-400 max-w-2xl mx-auto">
-            Record your screen, camera, microphone, and system audio simultaneously—each to its own file.
-            Built for professionals who demand reliability and flexibility.
+            Capture screen, camera, mic, and system audio at once. Each source gets its own file,
+            so you can edit them separately later.
           </p>
 
           {/* CTA Buttons */}

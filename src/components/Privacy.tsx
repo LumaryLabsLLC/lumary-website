@@ -48,8 +48,7 @@ export function Privacy() {
             Your data stays yours
           </p>
           <p className="mt-6 text-lg leading-8 text-zinc-400">
-            Lumary is built with privacy at its core. We believe your recordings and transcripts
-            should belong to you—not us, not the cloud.
+            Your recordings stay on your Mac. We don't want them, and we never see them.
           </p>
         </div>
 
