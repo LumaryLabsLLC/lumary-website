@@ -13,7 +13,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0d0d0f] noise-bg vignette lens-distortion relative overflow-hidden">
+    <div className="min-h-screen bg-[#0d0d0f] noise-bg relative overflow-hidden">
       {/* Background gradient orbs */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {/* Top-left amber orb */}
@@ -38,47 +38,8 @@ export default function Home() {
         />
       </div>
 
-      {/* Bokeh circles */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="bokeh w-32 h-32 top-[20%] left-[10%]"
-          style={{ position: 'absolute', animationDelay: '0s' }}
-        />
-        <div
-          className="bokeh w-24 h-24 top-[60%] right-[15%]"
-          style={{ position: 'absolute', animationDelay: '2s' }}
-        />
-        <div
-          className="bokeh w-16 h-16 top-[40%] left-[80%]"
-          style={{ position: 'absolute', animationDelay: '4s' }}
-        />
-        <div
-          className="bokeh w-20 h-20 top-[75%] left-[25%]"
-          style={{ position: 'absolute', animationDelay: '1s' }}
-        />
-        <div
-          className="bokeh w-12 h-12 top-[30%] left-[60%]"
-          style={{ position: 'absolute', animationDelay: '3s' }}
-        />
-      </div>
-
-      {/* Anamorphic lens flares */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-50">
-        <div
-          className="anamorphic-flare w-[60%] top-[25%] left-[20%]"
-          style={{ position: 'absolute' }}
-        />
-        <div
-          className="anamorphic-flare w-[40%] top-[65%] left-[35%]"
-          style={{ position: 'absolute', animationDelay: '6s', opacity: 0.1 }}
-        />
-      </div>
-
-      {/* Light leak overlay */}
-      <div className="light-leak" />
-
       {/* Grid overlay */}
-      <div className="fixed inset-0 grid-bg pointer-events-none opacity-30" />
+      <div className="fixed inset-0 grid-bg pointer-events-none opacity-50" />
 
       {/* Content */}
       <div className="relative z-10">
