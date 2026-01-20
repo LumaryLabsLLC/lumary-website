@@ -1,0 +1,10 @@
+export { Header } from "./Header";
+export { Hero } from "./Hero";
+export { Features } from "./Features";
+export { Showcase } from "./Showcase";
+export { Specs } from "./Specs";
+export { UseCases } from "./UseCases";
+export { Privacy } from "./Privacy";
+export { Pricing } from "./Pricing";
+export { FAQ } from "./FAQ";
+export { Footer } from "./Footer";
