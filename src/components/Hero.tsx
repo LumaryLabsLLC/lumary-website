@@ -3,7 +3,7 @@ export function Hero() {
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-blue-500/20 rounded-full blur-[120px]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-amber-500/20 rounded-full blur-[120px]" />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -19,7 +19,7 @@ export function Hero() {
           {/* Headline */}
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
             Professional Screen Recording for{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">
               macOS
             </span>
           </h1>

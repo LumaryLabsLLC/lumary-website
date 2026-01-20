@@ -15,7 +15,7 @@ export function Pricing() {
     <section id="pricing" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue-500">Pricing</h2>
+          <h2 className="text-base font-semibold leading-7 text-amber-400">Pricing</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             One-time purchase, no subscriptions
           </p>
@@ -25,14 +25,14 @@ export function Pricing() {
         </div>
 
         <div className="mx-auto mt-16 max-w-lg">
-          <div className="rounded-3xl border border-zinc-700 bg-zinc-900/50 p-8 lg:p-10 ring-1 ring-blue-500/20">
+          <div className="rounded-3xl border border-zinc-700 bg-zinc-900/50 p-8 lg:p-10 ring-1 ring-amber-500/20">
             {/* Price badge */}
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-lg font-semibold text-white">Lumary</h3>
                 <p className="text-sm text-zinc-400">Professional Screen Recorder</p>
               </div>
-              <div className="rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400">
+              <div className="rounded-full bg-amber-500/10 px-3 py-1 text-sm font-medium text-amber-400">
                 macOS
               </div>
             </div>
@@ -62,7 +62,7 @@ export function Pricing() {
               {features.map((feature) => (
                 <li key={feature} className="flex items-start gap-3">
                   <svg
-                    className="w-5 h-5 text-blue-500 mt-0.5 shrink-0"
+                    className="w-5 h-5 text-amber-400 mt-0.5 shrink-0"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={2}

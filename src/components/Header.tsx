@@ -87,7 +87,7 @@ export function Header() {
               ))}
               <Link
                 href="#pricing"
-                className="block rounded-lg px-3 py-2 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 mt-4"
+                className="block rounded-lg px-3 py-2 text-base font-medium text-zinc-900 bg-amber-400 hover:bg-amber-300 mt-4"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Download

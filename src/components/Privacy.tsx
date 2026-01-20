@@ -43,7 +43,7 @@ export function Privacy() {
     <section className="py-24 lg:py-32 bg-zinc-900/30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue-500">Privacy First</h2>
+          <h2 className="text-base font-semibold leading-7 text-amber-400">Privacy First</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Your data stays yours
           </p>
@@ -60,7 +60,7 @@ export function Privacy() {
                 key={feature.title}
                 className="flex items-start gap-4 rounded-xl border border-zinc-800 bg-zinc-900/50 p-6"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 text-blue-500">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-500/10 text-amber-400">
                   {feature.icon}
                 </div>
                 <div>

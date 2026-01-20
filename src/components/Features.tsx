@@ -75,7 +75,7 @@ export function Features() {
     <section id="features" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue-500">Everything you need</h2>
+          <h2 className="text-base font-semibold leading-7 text-amber-400">Everything you need</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Professional features, no compromise
           </p>
@@ -92,7 +92,7 @@ export function Features() {
                 key={feature.name}
                 className="relative rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8 hover:border-zinc-700 transition-colors"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-blue-500">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/10 text-amber-400">
                   {feature.icon}
                 </div>
                 <h3 className="mt-6 text-lg font-semibold text-white">{feature.name}</h3>
@@ -103,11 +103,11 @@ export function Features() {
 
           {/* Stream Deck Section */}
           <div className="mt-16 rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900/80 to-zinc-900/40 p-8 lg:p-10 overflow-hidden relative">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
 
             <div className="relative grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-400 mb-4">
+                <div className="inline-flex items-center gap-2 rounded-full bg-amber-500/10 px-3 py-1 text-sm text-amber-400 mb-4">
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
                   </svg>
@@ -174,7 +174,7 @@ export function Features() {
                             : i === 1
                             ? "bg-yellow-500"
                             : i === 2
-                            ? "bg-blue-500"
+                            ? "bg-amber-500"
                             : i === 3
                             ? "bg-green-500"
                             : "bg-zinc-800"
