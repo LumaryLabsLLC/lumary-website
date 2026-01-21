@@ -50,9 +50,9 @@ const features = [
     ),
   },
   {
-    name: "Composite Mode",
+    name: "Composite Mode & Scenes",
     description:
-      "Screen + camera in one file with a draggable picture-in-picture overlay. Great for tutorials.",
+      "Screen + camera in one file with draggable PiP. Save layouts as scenes and switch instantly with hotkeys or Stream Deck.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
@@ -66,8 +66,8 @@ const streamDeckActions = [
   { name: "Pause/Resume", icon: "pause" },
   { name: "Drop Marker", icon: "flag" },
   { name: "Increment Take", icon: "plus" },
+  { name: "Switch Scene", icon: "scenes" },
   { name: "Toggle Sources", icon: "toggle" },
-  { name: "Quick Actions", icon: "bolt" },
 ];
 
 export function Features() {
@@ -144,12 +144,13 @@ export function Features() {
                           <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
                         </svg>
                       )}
-                      {action.icon === "toggle" && (
+                      {action.icon === "scenes" && (
                         <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                          <path d="M2 4.25A2.25 2.25 0 014.25 2h6.5A2.25 2.25 0 0113 4.25v1.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 00-.75-.75h-6.5a.75.75 0 00-.75.75v6.5c0 .414.336.75.75.75h1.5a.75.75 0 010 1.5h-1.5A2.25 2.25 0 012 10.75v-6.5z" />
+                          <path d="M7 9.25A2.25 2.25 0 019.25 7h6.5A2.25 2.25 0 0118 9.25v6.5A2.25 2.25 0 0115.75 18h-6.5A2.25 2.25 0 017 15.75v-6.5zm2.25-.75a.75.75 0 00-.75.75v6.5c0 .414.336.75.75.75h6.5a.75.75 0 00.75-.75v-6.5a.75.75 0 00-.75-.75h-6.5z" />
                         </svg>
                       )}
-                      {action.icon === "bolt" && (
+                      {action.icon === "toggle" && (
                         <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
                         </svg>
