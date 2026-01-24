@@ -37,13 +37,6 @@ export function Pricing() {
               </div>
             </div>
 
-            {/* Price */}
-            <div className="mt-6 flex items-baseline gap-2">
-              <span className="text-5xl font-bold tracking-tight text-white">$29</span>
-              <span className="text-lg text-zinc-500">USD</span>
-            </div>
-            <p className="mt-1 text-sm text-zinc-500">One-time purchase</p>
-
             {/* CTA */}
             <div
               className="mt-8 block w-full rounded-full bg-zinc-700 py-3 text-center text-base font-semibold text-zinc-300 cursor-default"
