@@ -29,6 +29,14 @@ export const metadata: Metadata = {
     siteName: "Lumary",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://lumary.app/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Lumary - Professional Screen Recording for macOS",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -36,6 +44,7 @@ export const metadata: Metadata = {
     description:
       "The most powerful screen recorder for macOS. Multi-source capture, ProRes quality, local transcription.",
     creator: "@lumaryapp",
+    images: ["https://lumary.app/images/og-image.png"],
   },
   robots: {
     index: true,
