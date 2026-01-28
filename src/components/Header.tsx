@@ -17,10 +17,12 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Global">
         <div className="flex h-16 items-center justify-between">
           <div className="flex lg:flex-1">
-            <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
+            <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900">
               <img
                 src="/images/logo-64.png"
-                alt="Lumary"
+                alt=""
+                width={32}
+                height={32}
                 className="w-8 h-8 rounded-lg"
               />
               <span className="text-xl font-semibold text-white">Lumary</span>
@@ -31,16 +33,17 @@ export function Header() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-400"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-expanded={mobileMenuOpen}
+              aria-label={mobileMenuOpen ? "Close main menu" : "Open main menu"}
             >
-              <span className="sr-only">Open main menu</span>
               {mobileMenuOpen ? (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
               )}
@@ -53,7 +56,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+                className="text-sm font-medium text-zinc-400 hover:text-white transition-colors rounded-md px-2 py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
               >
                 {item.name}
               </Link>
@@ -63,7 +66,7 @@ export function Header() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
             <Link
               href="#pricing"
-              className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors"
+              className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
             >
               Download
             </Link>
@@ -78,7 +81,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block rounded-lg px-3 py-2 text-base font-medium text-zinc-400 hover:bg-[#27272a] hover:text-white"
+                  className="block rounded-lg px-3 py-2 text-base font-medium text-zinc-400 hover:bg-[#27272a] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -86,7 +89,7 @@ export function Header() {
               ))}
               <Link
                 href="#pricing"
-                className="block rounded-lg px-3 py-2 text-base font-medium text-zinc-900 bg-amber-400 hover:bg-amber-300 mt-4"
+                className="block rounded-lg px-3 py-2 text-base font-medium text-zinc-900 bg-amber-400 hover:bg-amber-300 mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Download

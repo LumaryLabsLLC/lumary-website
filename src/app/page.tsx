@@ -39,7 +39,7 @@ export default function Home() {
       {/* Content */}
       <div className="relative z-10">
         <Header />
-        <main>
+        <main id="main-content">
           <Hero />
           <Features />
           <Showcase />

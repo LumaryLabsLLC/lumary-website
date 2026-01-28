@@ -71,19 +71,21 @@ export function FAQ() {
             {faqs.map((faq, index) => (
               <div key={index} className="py-6">
                 <button
-                  className="flex w-full items-start justify-between text-left"
+                  className="flex w-full items-start justify-between text-left rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  aria-expanded={openIndex === index}
                 >
                   <span className="text-base font-semibold text-white pr-8">{faq.question}</span>
                   <span className="ml-6 flex h-7 items-center shrink-0">
                     <svg
-                      className={`h-5 w-5 text-zinc-500 transition-transform ${
+                      className={`h-5 w-5 text-zinc-500 transition-transform motion-reduce:transition-none ${
                         openIndex === index ? "rotate-180" : ""
                       }`}
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
+                      aria-hidden="true"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                     </svg>
